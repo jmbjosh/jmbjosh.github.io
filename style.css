@@ -15,6 +15,7 @@ h1 {
     font-size: 40pt;
 }
 
+
 h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 20pt;
@@ -73,9 +74,9 @@ h3 {
 /* ===== sideNav =====*/
 
 #jbLogo {
-    width: 150px;
-    height: 150px;
+    width: 50%;
     margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 h6 {
@@ -156,4 +157,3 @@ h6 {
     padding-right: 8px;
     font-size: 18pt;
 }
-
