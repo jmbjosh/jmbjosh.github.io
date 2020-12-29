@@ -1,7 +1,15 @@
+/*
+colors
+
+#ff6633     #f8af8a     #f3e6cd     #b6abce     #4e4ab1     #232e6f
+
+*/
+
+
 body {
     padding: 0px;
     margin: 0px;
-    background-color: #e8e7e2;
+    background-color: #f3e6cd;
 }
 
 
@@ -11,7 +19,7 @@ body {
 
 h1 {
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-weight: 200;
     font-size: 40pt;
 }
 
@@ -84,7 +92,7 @@ h6 {
     padding: 0;
     margin: 0;
     display: inline;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .sidenav {
@@ -94,7 +102,7 @@ h6 {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #e8e7e2;
+    background-color: #f3e6cd;
     border-right-style: solid;
     border-color: #000000;
     overflow-x: hidden;
@@ -113,7 +121,7 @@ h6 {
 .dropdown-btn {
     padding: 6px 8px 6px 20px;
     text-decoration: none;
-    font-size: 14pt;
+    font-size: 12pt;
     color: #000000;
     display: block;
     border: none;
@@ -128,14 +136,14 @@ h6 {
 /* On mouse-over */
 .sidenav a:hover,
 .dropdown-btn:hover {
-    background-color: #837cf8;
+    background-color: #b6abce;
 }
 
 
 
 /* Add an active class to the active dropdown button */
 .active {
-    background-color: #4e4ab1;
+    background-color: #b6abce;
     color: #000000;
 }
 
@@ -147,7 +155,7 @@ h6 {
 }
 
 .dropdown-container a:hover {
-    background-color: #837cf8;
+    background-color: #b6abce;
     color: #ffffff;
 }
 
