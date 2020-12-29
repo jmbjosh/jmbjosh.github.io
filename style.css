@@ -136,26 +136,27 @@ h6 {
 /* On mouse-over */
 .sidenav a:hover,
 .dropdown-btn:hover {
-    background-color: #b6abce;
+    background-color: #4e4ab1;
+    color: #ffffff;
 }
 
 
 
 /* Add an active class to the active dropdown button */
 .active {
-    background-color: #b6abce;
-    color: #000000;
+    background-color: #4e4ab1;
+    color: #ffffff;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
     display: none;
-    background-color: #ffffff;
+    background-color: #b6abce;
     padding-left: 8px;
 }
 
 .dropdown-container a:hover {
-    background-color: #b6abce;
+    background-color: #4e4ab1;
     color: #ffffff;
 }
 
