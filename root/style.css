@@ -6,10 +6,16 @@ colors
 */
 
 
+.copy {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14pt;
+}
+
 body {
     padding: 0px;
     margin: 0px;
-    background-color: #f3e6cd;
+    background-color: #ffffff;
 }
 
 
@@ -23,6 +29,18 @@ h1 {
     font-size: 40pt;
 }
 
+.floatRight {
+    float: left;
+    margin-right: 20px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18pt;
+    text-decoration: none;
+    color: #000000;
+}
+
 
 h3 {
     font-family: 'Roboto', sans-serif;
@@ -31,11 +49,55 @@ h3 {
     color: #000000;
 }
 
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+}
+
+.aboutContainer a {
+    width: 100px;
+    background-color: #ff6633;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18pt;
+    text-decoration: none;
+    color: #000000;
+}
+
+.aboutContainer a:hover {
+    background-color: #f8af8a;
+}
+
+.aboutContainer img {
+    margin-bottom: 20px;
+}
+
 .homePhotoGrid {
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
+.aboutContainer p {
+    width: 90%;
+}
+
+.aboutContainer {
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+
+.contactContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 10%;
+}
 
 /* Main content */
 .main {
@@ -79,13 +141,8 @@ h3 {
 }
 
 
-/* ===== sideNav =====*/
+/* ======== sideNav ========*/
 
-#jbLogo {
-    width: 50%;
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
 
 h6 {
     font-size: 16pt;
@@ -102,7 +159,7 @@ h6 {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #f3e6cd;
+    background-color: #ffffff;
     border-right-style: solid;
     border-color: #000000;
     overflow-x: hidden;
@@ -117,7 +174,7 @@ h6 {
 }
 
 /* Style the sidenav links and the dropdown button */
-.sidenav a,
+.sidenav a:not(#jbLogo),
 .dropdown-btn {
     padding: 6px 8px 6px 20px;
     text-decoration: none;
@@ -134,7 +191,7 @@ h6 {
 }
 
 /* On mouse-over */
-.sidenav a:hover,
+.sidenav a:hover:not(#jbLogo),
 .dropdown-btn:hover {
     background-color: #4e4ab1;
     color: #ffffff;
@@ -165,4 +222,12 @@ h6 {
     float: right;
     padding-right: 8px;
     font-size: 18pt;
+}
+
+#jbLogo {
+    display: block;
+    width: 50%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin: auto;
 }
