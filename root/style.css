@@ -93,11 +93,7 @@ h3 {
     margin: 10%;
 }
 
-.contactContainer {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-top: 10%;
-}
+
 
 /* Main content */
 .main {
@@ -152,6 +148,17 @@ h6 {
     font-weight: 300;
 }
 
+.contact {
+    position: fixed;
+    bottom: 20px;
+    padding: 6px 8px 6px 20px;
+    font-size: 12pt;
+    color: #000000;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+
+
 .sidenav {
     height: 100%;
     width: 15%;
@@ -169,8 +176,6 @@ h6 {
     border-right-color: black;
     border-width: 2px;
     margin: 0px;
-    text-align: center;
-    justify-content: center;
 }
 
 /* Style the sidenav links and the dropdown button */
@@ -191,7 +196,7 @@ h6 {
 }
 
 /* On mouse-over */
-.sidenav a:hover:not(#jbLogo),
+.sidenav a:hover:not(#jbLogo):not(#contact a),
 .dropdown-btn:hover {
     background-color: #4e4ab1;
     color: #ffffff;
@@ -230,4 +235,37 @@ h6 {
     margin-bottom: 15px;
     margin-top: 15px;
     margin: auto;
+}
+
+#contact {
+    overflow-x: hidden;
+    width: 12%;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    z-index: 1;
+    padding: 6px 8px 6px 20px;
+    font-size: 12pt;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+#social a {
+    width: auto;
+    padding-top: 5px;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    margin-top: 5px;
+}
+
+#social a:hover {
+    background-color: #4e4ab1;
+    color: #ffffff;
+    padding: 6px 8px 6px 20px;
+    width: 100%;
+}
+
+.fab {
+    font-size: 18pt;
 }
