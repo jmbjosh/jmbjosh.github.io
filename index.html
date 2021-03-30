@@ -11,7 +11,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 
-<body>
+<body onload="arrayDown()">
     <header>
         <div class="sidenav">
             <a id=jbLogo href="/index.html">
@@ -59,72 +59,89 @@
             <img id="banner" src="root/assets/Asset%209.svg">
             <h1>INDUSTRAIL DESIGN PORTFOLIO</h1>
         </div>
-        <div class="homePhotoGrid">
-            <div class="container">
-                <a href="#">
-                    <img src="root/assets/fullProject_landing_1.jpg" class="fadeImage">
-                    <div class="test">
-                        <h3>DISC TRACKER</h3>
+
+        <div class="rolodex">
+
+            <!--Disk-->
+            <div class="card" style="--i:1">
+                <div class="content" style="--j:1">
+                    <div class="container">
+                        <a href="#">
+                            <img src="root/assets/fullProject_landing_1.jpg" class="fadeImage">
+                            <h3>DISC TRACKER</h3>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
-            <div class="container">
-                <a href="#">
-                    <img src="root/assets/Jberg_crossFit_handle_WhteBG.jpg" class="fadeImage">
-                    <div class="test">
-                        <h3>CROSSFIT EQUIPMENT</h3>
+
+            <!--Crossfit-->
+            <div class="card" style="--i:2">
+                <div class="content" style="--j:2">
+                    <div class="container">
+                        <a href="#">
+                            <img src="root/assets/Jberg_crossFit_handle_WhteBG.jpg" class="fadeImage">
+                            <h3>CROSSFIT EQUIPMENT</h3>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
-            <div class="container">
-                <a href="#">
-                    <img src="root/assets/Pen_WB.jpg" class="fadeImage">
-                    <div class="test">
-                        <h3>PEN CASE</h3>
+
+            <!--Pen-->
+            <div class="card" style="--i:3">
+                <div class="content" style="--j:3">
+                    <div class="container">
+                        <a href="#">
+                            <img src="root/assets/Pen_WB.jpg" class="fadeImage">
+                            <h3>PEN CASE</h3>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
-            <div class="container">
-                <a href="#">
-                    <img src="root/assets/chairrenderWhiteBG.jpg" class="fadeImage">
-                    <div class="test">
-                        <h3>WOODEN FOLDING CHAIR</h3>
+
+            <!--Chair-->
+            <div class="card" style="--i:4">
+                <div class="content" style="--j:4">
+                    <div class="container">
+                        <a href="#">
+                            <img src="root/assets/chairrenderWhiteBG.jpg" class="fadeImage">
+                            <h3>WOODEN FOLDING CHAIR</h3>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
-            <div class="container">
-                <a href="#">
-                    <img src="root/assets/radio_built.jpg" class="fadeImage">
-                    <div class="test">
-                        <h3>RADIO REDESIGN</h3>
+
+            <!--Radio-->
+            <div class="card" style="--i:5">
+                <div class="content" style="--j:5">
+                    <div class="container">
+                        <a href="#">
+                            <img src="root/assets/radio_built.jpg" class="fadeImage">
+                            <h3>RADIO REDESIGN</h3>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
-            <div class="container">
-                <a href="#">
-                    <img src="root/assets/TW_WhiteBG.jpg" class="fadeImage">
-                    <div class="test">
-                        <h3>STEAM DISHWASHER</h3>
+
+            <!--Dishwasher-->
+            <div class="card" style="--i:6">
+                <div class="content" style="--j:6">
+                    <div class="container">
+                        <a href="#">
+                            <img src="root/assets/TW_WhiteBG.jpg" class="fadeImage">
+                            <h3>STEAM DISHWASHER</h3>
+                        </a>
                     </div>
-                </a>
-            </div>
-            <div class="container">
-                <a href="#">
-                    <img src="root/assets/bike_whiteBG.jpg" class="fadeImage">
-                    <div class="test">
-                        <h3>AUTOMATA TOY</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="container">
-                <a href="#">
-                    <img src="root/assets/stayAway.jpg" class="fadeImage">
-                    <div class="test">
-                        <h3>STAY AWAY (SOCIAL DISTANICING DEVICE)</h3>
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
-    </main>
 
-</body></html>
+        <button id=backBtn> <i class="fas fa-angle-left"></i> </button>
+        <button id=forwardBtn> <i class="fas fa-angle-right"></i> </button>
+
+    </main>
+    <script src="java.js">
+    </script>
+
+</body>
+
+</html>
