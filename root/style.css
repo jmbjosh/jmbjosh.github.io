@@ -106,17 +106,6 @@ h3 {
     text-align: center;
 }
 
-
-
-.fadeImage {
-    opacity: .5;
-    transition: .5s ease;
-}
-
-.fadeImage:hover {
-    opacity: 1;
-}
-
 .container a {
     text-decoration: none;
 }
@@ -187,7 +176,6 @@ h3 {
 
 
 /* ======== sideNav ========*/
-
 
 h6 {
     font-size: 16pt;
