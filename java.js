@@ -58,27 +58,31 @@ function setOpcty(i){
 			card[i].style.opacity = "0";
 		}
 }
+
 function setTransition(i){
 	if(posArray[i]==0){
-			card[i].style.transition = "transform 0ms";
-			card[i].style.transition = "opacity 0ms";
-			card[i].style.transitionDelay = "0ms";
+		//movement from 1 -> 0
+			card[i].style.transition = "transform 1000ms, opacity 750ms";
+			card[i].style.transitionDelay = "0ms";	
 		}
 		if(posArray[i]==1){
-			card[i].style.transition = "transform 400ms";
-			card[i].style.transition = "opacity 0ms";
-			card[i].style.transitionDelay = "0ms";
+			//movement from 2 -> 1
+			card[i].style.transition = "transform 1000ms, opacity 1000ms";
+			card[i].style.transitionDelay = "50ms";
 		}
 		if(posArray[i]==2){
-			card[i].style.transition = "transform 400ms"; 
+			//movement from 3 > 0
+			card[i].style.transition = "transform 1000ms, opacity 1000ms";
 			card[i].style.transitionDelay = "100ms";
 		}
 	if(posArray[i]==3){
-		card[i].style.transition = "transform 400ms";
-			card[i].style.transitionDelay = "150ms";
+		//movement from 4 -> 3
+		card[i].style.transition = "transform 1000ms, opacity 1000ms";
+			card[i].style.transitionDelay = "200ms";
 	}
 		if(posArray[i]>3){
-			card[i].style.transition = "transform 400ms";
-			card[i].style.transitionDelay = "200ms";
+			//movement from 5+ -> 4
+			card[i].style.transition = "transform 1000ms, opacity 1000ms";
+			card[i].style.transitionDelay = "250ms";
 		}
 }
