@@ -45,12 +45,12 @@ function setOpcty(i) {
         card[i].style.opacity = "1";
     }
     if (posArray[i] == 1) {
-        card[i].style.opacity = ".8";
-    }
-    if (posArray[i] == 2) {
         card[i].style.opacity = ".6";
     }
-    if (posArray[i] > 3) {
+    if (posArray[i] == 2) {
+        card[i].style.opacity = ".3";
+    }
+    if (posArray[i] > 2) {
         card[i].style.opacity = "0";
     }
 }
@@ -71,9 +71,13 @@ function setTransition(i) {
         card[i].style.transition = "transform 1000ms, opacity 1000ms";
         card[i].style.transitionDelay = "200ms";
     }
-    if (posArray[i] > 3) {
+    if (posArray[i] > 2) {
         //movement from 5+ -> 4
         card[i].style.transition = "transform 1000ms, opacity 1000ms";
         card[i].style.transitionDelay = "250ms";
     }
 }
+
+
+
+

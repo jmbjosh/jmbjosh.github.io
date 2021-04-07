@@ -6,11 +6,25 @@ colors
 */
 
 
+
+/*===== TEXT =====*/
+
 .copy {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 14pt;
+    color: #000000;
+    text-decoration: none;
 }
+
+.copy a{
+     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14pt;
+    color: #000000;
+    text-decoration: none;
+}
+
 
 body {
     padding: 0px;
@@ -30,10 +44,7 @@ h1 {
     font-size: 20pt;
 }
 
-.floatRight {
-    float: left;
-    margin-right: 20px;
-}
+
 
 h2 {
     font-family: 'Roboto', sans-serif;
@@ -51,6 +62,22 @@ h3 {
     color: #000000;
 }
 
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-weight: 200;
+    font-size: 50pt;
+}
+
+
+
+/*===== LAYOUT =====*/
+
+.floatRight {
+    float: left;
+    margin-right: 20px;
+}
+
 .center {
     display: flex;
     align-items: center;
@@ -65,10 +92,6 @@ h3 {
     margin: 15px;
     text-align: center;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18pt;
-    text-decoration: none;
-    color: #000000;
 }
 
 .aboutContainer a:hover {
@@ -77,11 +100,6 @@ h3 {
 
 .aboutContainer img {
     margin-bottom: 20px;
-}
-
-.homePhotoGrid {
-    display: grid;
-    grid-template-columns: 50% 50%;
 }
 
 .aboutContainer p {
@@ -99,12 +117,13 @@ h3 {
 
 
 
-/* ===== Main content ===== */
+/* ===== HOMEPAGE content ===== */
 .main {
     margin-left: 15%;
     padding: 30px;
     text-align: center;
 }
+
 
 .container a {
     text-decoration: none;
@@ -178,7 +197,7 @@ h3 {
 /* ======== sideNav ========*/
 
 h6 {
-    font-size: 16pt;
+    font-size: 14pt;
     padding: 0;
     margin: 0;
     display: inline;
@@ -269,38 +288,53 @@ h6 {
 #jbLogo {
     display: block;
     width: 50%;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     margin-top: 15px;
     margin: auto;
 }
 
 #contact {
-    overflow-x: hidden;
-    width: 12%;
+    margin-left: 15px;
+    display: block;
     position: fixed;
-    bottom: 20px;
-    left: 0;
+    bottom: 30px;
     z-index: 1;
-    padding: 6px 8px 6px 20px;
     font-size: 12pt;
     color: #000000;
     font-family: 'Roboto', sans-serif;
 }
 
-#social a {
-    width: auto;
-    padding-top: 5px;
-    display: block;
-    text-decoration: none;
+#email{
+    margin-top: 10px;
+}
+#email a{
     color: #000000;
-    margin-top: 5px;
+    padding: 5px 6px 5px 6px;
+    margin-left: 15px;
+    text-decoration: none;
 }
 
-#social a:hover {
+#email a:hover{
+     background-color: #4e4ab1;
+    color: #ffffff;
+}
+
+#social{
+    margin-left: 15px;
+    margin-top: 7px;
+}
+
+#social a {
+    width: auto;
+    padding: 10px 6px 5px 6px;
+    display: inline;
+    text-decoration: none;
+    color: #000000;
+}
+
+#social a:hover  {
     background-color: #4e4ab1;
     color: #ffffff;
-    padding: 6px 8px 6px 20px;
-    width: 100%;
 }
 
 .fab {
